@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="bg-top">
+  </div>
+
+  <div class="main">
+    <div class="main-head">
+      <h3>Simple, traffic-based pricing</h3>
+      <P>Sign-up for our 30-day trial. No credit card required. </p>
+    </div>
+
+
+    <div class="main-box">
+      <div class="divider">
+        <div class="price-adjust">
+          <div class="view-price">
+            <p class="first">10K Pageviews</p>
+            <p class="price desktop">$8<span>/month</span></p>
+          </div>
+  
+          <input type="range" id="price-slider" min="8" max="36" value="8">
+  
+          <p class="price mobile">$16<span>/month</span></p>
+
+          <div class="billing-info">
+            <p class="Monthly">Monthly Billing</p>
+  
+            <div class="btn" onclick="slashPriceBtn()">
+              <div class="button circle"></div>
+            </div>
+  
+            <p class="Yearly">Yearly Billing</p>
+            <p class="discount-desktop">25% discount</p>
+            <p class="discount-mobile">-25%</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pricing-package">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button id='CTA'>
+          Start my trial
+        </button>
+      </div>
+    </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/praise-oyeniyi">Praise Oyeniyi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
