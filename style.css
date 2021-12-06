@@ -224,6 +224,7 @@ ul li{
         margin: auto;
     }
     .main-head h3{
+        padding-top:2em;
         font-size: 30px;
         padding-bottom: 10px;
     }
@@ -246,6 +247,8 @@ ul li{
     }
     .btn{
         margin:0 3px;
+        height:30px;
+        width:55px;
     }
     .discount-mobile{
         display:flex;
@@ -264,5 +267,8 @@ ul li{
     }
     #CTA{
         margin-top:2em;
+    }
+    .attribution{
+        padding-bottom:2em;
     }
 }
